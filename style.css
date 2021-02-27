@@ -49,11 +49,9 @@ h1 {
   margin: 0px;
   margin-bottom: -3px;
   background-position: center;
-  max-width: 1000px;
-  overflow: hidden;
   background-repeat: no-repeat;
   background-color: #193059;
-  width: 960px;
+  max-width: 96%;
   height: 630px;
 }
 h2 {
@@ -183,18 +181,57 @@ p {
   background-color: #66cccc;
   margin: auto;
 }
-@media (max-width: 700px) {
+@media (max-width: 400px) {
+  body {
+    max-width: 400px;
+  }
   .container {
-    width: max-content;
+    max-width: 400px;
   }
-  .insta {
-    width: 40px;
-    height: 40px;
+
+  #contImagens {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
   }
-  .face {
-    width: 70px;
+  .direito {
+    margin-top: 30px;
   }
-  .twitter {
-    width: 70px;
+  .unimed {
+    margin-top: 30px;
+  }
+  .fundo {
+    margin-top: 30px;
+  }
+
+  .convenio {
+    width: 400px;
+    margin-top: 30px;
+  }
+  .filie {
+    margin: auto;
+    margin-top: 60px;
+  }
+  .mapa iframe {
+    width: 350px;
+  }
+  #contRedes {
+    max-width: 300px;
+    margin: auto;
+  }
+  #contRedes .twitter {
+    width: 80px;
+    margin-right: 5px;
+    margin-top: -4px;
+  }
+  #contRedes .insta {
+    width: 60px;
+    height: 60px;
+  }
+  #contRedes .face {
+    width: 100px;
+    height: 100px;
+    margin-top: -5px;
   }
 }
